@@ -1,4 +1,4 @@
-#
+# Dwight Thomas
 # Gedare Bloom
 #
 # heapsort.s
