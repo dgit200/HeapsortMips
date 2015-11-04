@@ -22,9 +22,9 @@ main:
 printloop:
   li $v0, 1
   lw $a0, 0($t0)
+  syscall
   addi $t0, $t0, 4
   addi $t1, $t1, 1
-  syscall
   li $v0, 4
   la $a0, space 
   syscall
@@ -35,7 +35,8 @@ printloop:
   syscall
   
 done:
-  jr $ra
+  li $v0, 10
+  syscall
 
 heapsort: # a0 = &array, a1 = size(array)
   addi $sp, $sp, -8
