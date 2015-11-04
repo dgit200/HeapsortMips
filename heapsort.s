@@ -99,10 +99,10 @@ end_make_heap:
 #bubble_down is a leaf in the call graph
 bubble_down: # a0 = &array, a1 = s_idx, a2 = end
   move $t0, $a1  # index = s_idx
-  sll $t1, $t0, 2  # child = index*2+1
+  sll $t1, $t0, 1  # child = index*2+1		(change here because ssl by 2 is multiplying by 4 but we need to multipy by 2)
   addi $t1, $t1, 1
   
-  bgt $t1, $a2, end_bubble_down
+  bgt $t1, $a2, end_bubble_down		#if (child>end){return;}
   
 bubble_down_loop:
 
