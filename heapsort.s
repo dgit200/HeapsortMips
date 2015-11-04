@@ -146,7 +146,7 @@ end_bubble_down:
   
 .data
 # the array that holds unordered data
-array: .word 54,23,56,32,99,7,4,2,88,9,11,21,39,55,100,101,43,1,3,69,-5,-24,-17,0
+array: .word 54, 23, 56, 32, 99, 7, 4, 2, 88, 9, 11, 21, 39, 55, 100, 101, 43, 1, 3, 69, -5, -24, -17, 0
 size: .word 24
 space: .asciiz " "
 newline: .asciiz "\n"
